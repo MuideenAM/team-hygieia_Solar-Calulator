@@ -173,17 +173,19 @@ p {
     color: #ffffff;
 }
 
-.output {
+#output {
     display: block;
     clear: both;
-    width: 400px;
+    width: 500px;
     height: 50px;
     font-size: 2em;
-    color: #ffffff;
+    color: #000000;
     background-color: #ffffff;
     border-radius: 5px;
+    margin-top:500px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    /*visibility: hidden;*/
+    padding-top: 10px;
+    visibility: hidden;
 }
