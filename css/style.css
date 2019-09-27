@@ -5,9 +5,12 @@
 }
 
 body {
-    background-color: #87ceeb;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("../images/Solar-copy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
 }
 
 
@@ -118,30 +121,33 @@ thead {
 }
 
 .select {
-    font-size: 1em;
+    font-size: 80%;
     border-radius: 15px;
     color: #cccccc;
+    padding:5px;
 }
 
 .qty {
-    font-size: 1em;
+    font-size: 70%;
     border-radius: 15px;
     color: #cccccc;
     text-align: center;
     width: 100px;
+    padding: 5px;
 }
 
 .power  {
-    font-size: 1em;
+    font-size: 70%;
     border-radius: 15px;
     color: #cccccc;
     text-align: center;
     width: 80px;
+    padding: 5px;
 }
 
 #add {
-    width: 370px;
-    font-size: 1.5em;
+    width: 340px;
+    font-size: 150%;
     border-radius: 15px;
     background-color: #00ff00;
     border-color: #00ff00;
@@ -149,8 +155,8 @@ thead {
 }
 
 #total {
-    width: 370px;
-    font-size: 1.5em;
+    width: 340px;
+    font-size: 150%;
     border-radius: 15px;
     background-color: #ffffff;
     border-color: #ffffff;
@@ -191,8 +197,11 @@ p {
 }
 
 footer p {
+    display: relative;
+    clear: both;
     text-align: right;
-    margin-right: 50px;
-    font-size: 1.6em;
+    margin-top: 5px;
+    border-right: 70px;
+    font-size: 120%;
     color: #ffffff;
 }
