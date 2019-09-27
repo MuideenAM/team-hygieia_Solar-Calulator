@@ -189,3 +189,10 @@ p {
     padding-top: 10px;
     visibility: hidden;
 }
+
+footer p {
+    text-align: right;
+    margin-right: 50px;
+    font-size: 1.6em;
+    color: #ffffff;
+}

@@ -336,10 +336,11 @@ const appliances_with_power = [
 
 //Initialise the environment by loading the appliances into the select options.
 const initialise = () => {
-    document.querySelector('.home').click();
+    document.querySelector('.home').classList.add("clicked");
 	loadAppliances();
 };
 
+//declare and define function to load select options of the appliances and listen for their value change events.
 const loadAppliances = () => {
 	const appliancesSelector = document.querySelectorAll(".appliance");
 	const qtySelector = document.querySelectorAll(".qty");
@@ -347,6 +348,7 @@ const loadAppliances = () => {
 
 	for(let i = 0; i < appliancesSelector.length; i++) {
 		for(let j = 0; j < appliances_with_power.length; j++) {
+			//create new option element to be added to the select.
 			let optn = document.createElement("OPTION");
 			optn.text = appliances_with_power[j].appliance;
 			optn.value = j + 1;
@@ -354,11 +356,13 @@ const loadAppliances = () => {
 			appliancesSelector[i].options.add(optn);			
 		}
 
+		//listen for select change event
 		appliancesSelector[i].addEventListener("change", () => {
 			document.querySelector("#power" + (i + 1)).value = appliances_with_power[appliancesSelector[i].value - 1].power;
 			document.querySelector("#quantity" + (i+1)).value = 1;
 		}, false);
 
+		//listen for the quantity click event to take care of the value validation.
 		qtySelector[i].addEventListener("click", () => {
 			if( ( (qtySelector[i].value < 1) || (qtySelector[i].value > 0) ) && (appliancesSelector[i].value == "prompt") ) {
 				qtySelector[i].value = "";
@@ -366,41 +370,51 @@ const loadAppliances = () => {
 				qtySelector[i].value = 1;
 			}
 		}, false);
-
-		powerSelector[i].attributes.s
 	}
 };
 
+//listen for click event on the home menu option.
 document.querySelector(".home").addEventListener("click", () => {
 	document.querySelector(".home").classList.add("clicked");
 	document.querySelector(".about").classList.remove("clicked");
 	document.querySelector(".team").classList.remove("clicked");
+
+	window.location = "./index.html";
 },  false);
 
+//listen for click event of the about menu option.
 document.querySelector(".about").addEventListener("click", () => {
 	document.querySelector(".home").classList.remove("clicked");
 	document.querySelector(".about").classList.add("clicked");
 	document.querySelector(".team").classList.remove("clicked");
+
+	window.location = "./about.html";
 }, false);
 
+//listen for click event of the team menu option.
 document.querySelector(".team").addEventListener("click", () => {
 	document.querySelector(".home").classList.remove("clicked");
 	document.querySelector(".about").classList.remove("clicked");
 	document.querySelector(".team").classList.add("clicked");
 }, false);
 
+//listen for click event of the total calculation  button.
 document.querySelector("#total").addEventListener("click", () => {
+	//initialise necessary variables and constants.
 	let total = 0;
 
 	const qtySelector = document.querySelectorAll(".qty");
 	const powerSelector = document.querySelectorAll(".power");
 	const output = document.querySelector("#output");
 
+	//compute the total kW used.
 	for(let i = 0; i < qtySelector.length; i++) {
 		if(qtySelector[i].value >= 1) {
 			total += (qtySelector[i].value * powerSelector[i].value);
 		}
 	}
+
+	//display the total value if appliance(s) is/are selected.
 	if(total > 0) {
 		output.innerHTML = "You are consuming " + total + " kW of Power";
 		output.style.visibility = "visible";
