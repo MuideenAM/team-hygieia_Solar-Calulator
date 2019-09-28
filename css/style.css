@@ -1,5 +1,4 @@
 * {
-    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -92,25 +91,14 @@ h3 {
 }
 
 table {
-    font-size: 2em;
-    border-spacing: 5px;
+    font-size: 16px;
+    border-spacing: 10px;
     border-collapse: separate;
-}
-
-.column1 {
-    width: 330px;   
-}
-
-.column2 {
-    width: 80px;
-}
-
-.column3 {
-    width: 60px;    
 }
 
 thead {
     color: #ffffff;
+    font-size: 20px;
 }
 
 .clicked {
@@ -121,46 +109,53 @@ thead {
 }
 
 .select {
-    font-size: 80%;
+    font-size: 16px;
     border-radius: 15px;
-    color: #cccccc;
+    color: #141313;
     padding:5px;
 }
 
 .qty {
-    font-size: 70%;
+    font-size: 16px;
     border-radius: 15px;
-    color: #cccccc;
+    color: #141313;
     text-align: center;
-    width: 100px;
     padding: 5px;
+    width: 70px;
 }
 
 .power  {
-    font-size: 70%;
+    font-size: 16px;
     border-radius: 15px;
-    color: #cccccc;
+    color: #141313;
     text-align: center;
-    width: 80px;
+    width: 65px;
     padding: 5px;
 }
 
 #add {
-    width: 340px;
-    font-size: 150%;
+    width: 380px;
+    font-size: 18px;
     border-radius: 15px;
     background-color: #00ff00;
     border-color: #00ff00;
     padding: 5px;
+    margin-left: 10px;
 }
 
 #total {
-    width: 340px;
-    font-size: 150%;
+    width: 365px;
+    font-size: 18px;
     border-radius: 15px;
     background-color: #ffffff;
     border-color: #ffffff;
     padding: 5px;
+}
+
+#reset {
+    display: inline;
+    background: rgba(4, 4, 4, 0.2);
+    cursor: pointer;
 }
 
 #data-submission {
@@ -171,11 +166,11 @@ thead {
 }
 
 h3 {
-    font-size: 2.5em;
+    font-size: 30px;
 }
 
 p {
-    font-size: 1.6em;
+    font-size: 18px;
     color: #ffffff;
 }
 
@@ -183,8 +178,8 @@ p {
     display: block;
     clear: both;
     width: 500px;
-    height: 50px;
-    font-size: 2em;
+    height: 30px;
+    font-size: 18px;
     color: #000000;
     background-color: #ffffff;
     border-radius: 5px;
@@ -200,8 +195,8 @@ footer p {
     display: relative;
     clear: both;
     text-align: right;
-    margin-top: 5px;
+    margin-top: 15px;
     border-right: 70px;
-    font-size: 120%;
+    font-size: 14px;
     color: #ffffff;
 }

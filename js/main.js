@@ -373,6 +373,10 @@ const loadAppliances = () => {
 	}
 };
 
+document.querySelector(".reset").addEventListener("click", () => {
+	location.reload();
+}, false);
+
 //listen for click event on the home menu option.
 document.querySelector(".home").addEventListener("click", () => {
 	document.querySelector(".home").classList.add("clicked");
@@ -396,6 +400,8 @@ document.querySelector(".team").addEventListener("click", () => {
 	document.querySelector(".home").classList.remove("clicked");
 	document.querySelector(".about").classList.remove("clicked");
 	document.querySelector(".team").classList.add("clicked");
+
+	window.location = "./team.html";
 }, false);
 
 //listen for click event of the total calculation  button.
@@ -420,4 +426,5 @@ document.querySelector("#total").addEventListener("click", () => {
 		output.style.visibility = "visible";
 	}
 }, false);
+
 

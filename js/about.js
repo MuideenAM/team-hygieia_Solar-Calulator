@@ -26,6 +26,8 @@ document.querySelector(".team").addEventListener("click", () => {
 	document.querySelector(".home").classList.remove("clicked");
 	document.querySelector(".about").classList.remove("clicked");
 	document.querySelector(".team").classList.add("clicked");
+
+	window.location = "./team.html";
 }, false);
 
 
