@@ -105,7 +105,7 @@ h1 {
 h3 {
     font-size: 2.0em;
     color: #ffffff;
-     margin-top: 150px;
+    margin-top: 1.5em;
 }
 
 .row {
@@ -177,7 +177,7 @@ thead {
 
 #total {
     width: 80%;
-    font-size: 18px;
+    font-size: 1.2em;
     border-radius: 15px;
     background-color: #ffffff;
     border-color: #ffffff;
