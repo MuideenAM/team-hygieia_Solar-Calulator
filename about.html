@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hygieia Solar Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="./css/style-about.css">
+       
+        <title>Hygieia Solar Calculator</title>
     </head>
     <body onload="initialise()">
-        <header>
-            <h1>HYGIEIA</h1>
-            <nav>
-                <div class="menu home">
-                    <span><h2>Home</h2></span>
+        <div class="container-fluid">
+            <div class="row" id="head">
+                <div class="col head">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="header">
+                            <a class="navbar-brand" id="brand" href="#">HYGIEIA</a>
+                                
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                                
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item home">
+                                        <a class="nav-link" href="#">Home</span></a>
+                                    </li>
+                                    <li class="nav-item about">
+                                        <a class="nav-link" href="./about.html">About  <span class="sr-only">(current)</a>
+                                    </li>
+                                    <li class="nav-item team">
+                                        <a class="nav-link" href="./team.html">Team</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-                <div class="menu about">
-                    <h2>About</h2>
-                </div>
-                <div  class="menu team">
-                    <h2>Team</h2>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div class="main"><br><br><br>
-                <p>This App is Hygieia Solar Calculator.</p><br>
-                <p>This app helps its user calculate the power consumable by the user  based
-                    on the types and number of the appliances used by him/her. The different
-                    appliances have their specific power ratings, which we have collated and 
-                    incorporated into this app. The only task required by the user is to select 
-                    his/her appliances, select the number of each appliance and click on the 
-                    calculate comsuption button, which display the message in forming the user of 
-                    the total power consumed in kiloWatt.</p><br>
-                <p>Should you possess an appliance and such is not among the options selectable, 
-                    kindly reach out to us through our technical head at gentilityisworthwhile@yahoo.com.
-                    </p><br>
-                    <p>Thanks for using our app.</p>
             </div>
-        </main>
-        <footer>
-            <p>Powered by Team Hygieia HNGi6.0</p>
-        </footer>
+
+            <div class="row">
+                <div class="col">
+                    <br>
+                    <p>This App is Hygieia Solar Calculator.</p><br>
+                    <p>This app helps its user calculate the power consumable by the user  based
+                        on the types and number of the appliances used by him/her. The different
+                        appliances have their specific power ratings, which we have collated and 
+                        incorporated into this app. The only task required by the user is to select 
+                        his/her appliances, select the number of each appliance and click on the 
+                        calculate comsuption button, which display the message in forming the user of 
+                        the total power consumed in kiloWatt.</p><br>
+                    <p>Should you possess an appliance and such is not among the options selectable, 
+                        kindly reach out to us through our technical head at gentilityisworthwhile@yahoo.com.
+                        </p><br>
+                        <p>Thanks for using our app.
+                </div>
+            </div>
+            <footer>
+                <p>Powered by Team Hygieia HNGi6.0</p>
+            </footer>
+        </div>
+
         <script type="text/javascript" src="./js/about.js"></script>
     </body>
 </html>

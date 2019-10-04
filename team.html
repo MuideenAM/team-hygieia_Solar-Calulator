@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hygieia Solar Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="./css/style-team.css">
+        
+        <title>Hygieia Solar Calculator</title>
     </head>
     <body onload="initialise()">
-        <header>
-            <h1>HYGIEIA</h1>
-            <nav>
-                <div class="menu home">
-                    <span><h2>Home</h2></span>
+        <div class="container-fluid">
+            <div class="row" id="head">
+                <div class="col head">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="header">
+                            <a class="navbar-brand" id="brand" href="#">HYGIEIA</a>
+                                
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                                
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item home">
+                                        <a class="nav-link" href="#">Home</span></a>
+                                    </li>
+                                    <li class="nav-item about">
+                                        <a class="nav-link" href="./about.html">About</a>
+                                    </li>
+                                    <li class="nav-item team">
+                                        <a class="nav-link" href="./team.html">Team <lspan cass="sr-only">(current)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-                <div class="menu about">
-                    <h2>About</h2>
-                </div>
-                <div  class="menu team">
-                    <h2>Team</h2>
-                </div>
-            </nav>
-        </header>
-        <main>
+            </div>
             <h4>Names of the contributed team members</h4>
             <table>
                 <thead>
@@ -31,12 +49,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+        
                 </tbody>
             </table>
         </main>

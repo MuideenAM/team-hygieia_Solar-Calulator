@@ -1,58 +1,67 @@
 * {
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
     background-image: url("../images/Solar-copy.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;    
 }
 
+.container-fluid {
+    padding: 0;
+}
 
-header {
-    margin-top: 0;
-	width: 100%;
+#head {
+    background-color: #777777;
+    text-align: center;
+}
+
+.header, .navbar {
+    margin: auto;
+    width: 100% !Important;
 	display: flex;
 	color: white;
 	flex-direction: row;
-	justify-content: space-between;
-    margin-bottom: 0;
+    justify-content: space-between;
     background-color: #777777;
     border: 0;
+    padding: 0;
 }
 
-header > nav
-{
+.header a {
+    color: #ffffff !Important;
+    padding-top: 15px;
+}
+
+#navbarSupportedContent {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	margin-right: 60px;    
 }
 
-header > nav > div
-{
+.header > div {
 	display: block;
-	padding: 0 20px;
+	padding: 20px;
 	cursor: pointer;
     transition: 0.4s ease-out;
     align-content: center;
-    height: 95%;
-    line-height: 95%;
+    height: 100%;
+    line-height: 100%;
     text-align: center;
 }
 
-span {
-    display: inline-block;
+#navbarSupportedContent {
+    padding: 0;
     vertical-align: middle;
-    line-height: normal;
 }
 
-header > nav > div:hover
-{
+.nav-item:hover {
     transform: scale(1.05);
     display: block;
 	text-decoration-color: rgb(200, 200, 200);
@@ -60,11 +69,26 @@ header > nav > div:hover
     background-color: darkgray;
 }
 
+.nav-link {
+	font-weight: bolder;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
 h2
 {
 	font-weight: bolder;
     font-size: 20px;
     margin-top: 30px;
+}
+
+#brand {
+    vertical-align: middle;
+    margin-left: 150px;
+    font-weight:  bolder;
+    font-size: 30px;
+    color: #00ff00 !Important;
 }
 
 h1 {
@@ -77,40 +101,127 @@ h1 {
     color: #00ff00;
 }
 
-.main {
-    width: 95%;
-    height: 100%;
-    margin: auto;
+h3 {
+    font-size: 2.0em;
+    color: #ffffff;
+     margin-top: 150px;
 }
 
-.clicked {
+.row {
+    margin:0;
+    border:0;
+    padding: 0;
+}
+
+table {
+    font-size: 16px;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+thead {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.active {
     display: block;
     color: rgb(200, 200, 200);
     background-color: darkgray;
     border-bottom: 4px solid #00ff00;
 }
 
-p {
-    font-size: 18px;
-    color: #ffffff;
-    text-align: justify;
+.select {
+    font-size: 1em;
+    border-radius: 15px;
+    color: #141313;
+    padding:5px;
 }
 
-footer {
-    display: absolute;
-    bottom: 5px;
+.qty {
+    font-size: 16px;
+    border-radius: 15px;
+    color: #141313;
+    text-align: center;
+    padding: 5px;
+    width: 70px;
+}
+
+.power  {
+    font-size: 16px;
+    border-radius: 15px;
+    color: #141313;
+    text-align: center;
+    width: 70px;
+    padding: 5px;
+}
+
+#add {
+    width: 76%;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: #00ff00;
+    border-color: #00ff00;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+#total {
+    width: 80%;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    padding: 5px;
+}
+
+#reset {
+    width: 13%;
+    background: rgba(4, 4, 4, 0.2);
+    cursor: pointer;
+}
+
+p {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+#output-wrapper {
+    text-align: center;
+}
+
+#output {
+    display: inline-flex;
+    text-align: center;
+    background-color: #ffffff;
+    width: auto;
+    font-size: 1.2em;
+    color: #000000;
+    background-color: #ffffff;
+    height: 2em;
+    margin-top: 3em;
+    padding-top: 0.3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 0.5em;
+    visibility: hidden;
 }
 
 footer p {
+    display: relative;
     clear: both;
     text-align: right;
-    border-left: 70px;
-    margin-bottom: -10px;
-    font-size: 14px;
+    border-right: 70px;
+    font-size: 1em;
     color: #ffffff;
-    vertical-align:  bottom;
-    bottom: auto;
+    margin-top: 12em;
 }
 
+p {
+    font-size: 1.2em;
+    color: #ffffff;
+    text-align: justify;
+}
 
 
